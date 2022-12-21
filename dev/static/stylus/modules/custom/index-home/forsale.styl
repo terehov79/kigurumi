@@ -1,0 +1,117 @@
+.forsale
+  width 100%
+  padding 50px
+  &--wrap
+    width 100%
+    background: #30379E;
+    .swiper_btn
+      position relative
+    .swiper-prev_btn, .swiper-next_btn
+      position absolute
+      background: #fff;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      z-index: 5;
+      svg
+        fill #f56814;
+    .swiper-prev_btn
+      bottom 280px
+      left 2%
+    .swiper-next_btn
+      bottom 280px
+      right 3%
+  &__main
+    width: 100%;
+    position: relative;
+  &__photo
+    position relative
+  &__photo.sale
+    position relative
+    &::before
+      top 5%
+      left 25%
+      z-index 4
+  &__girl__image
+    position absolute
+    top 0
+    left 10%
+    z-index: 3;
+  &__girl-opacity__image
+    position absolute
+    top 15%
+    right 5%
+    opacity 0.1
+    filter: grayscale(100%);
+  &__girl-opacity__img
+    width 150%
+  &__circ01__image, &__circ02__image
+    position absolute
+    top 75%
+    z-index: 4;
+  &__circ01__image
+    left 1%
+  &__circ02__image
+    left 5%
+  &__content
+    padding: 55px 115px;
+    position absolute
+    width: 839px;
+    height: 383px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F56814;
+    border-radius: 30px;
+    top 10%
+    left 22%
+    overflow hidden
+    span.text_24
+      font-weight: bold;
+      line-height: 16px;
+      color: #454545;
+    p.text_14
+      font-weight: normal;
+      line-height: 16px;
+      color: #454545;
+      padding: 10px 0;
+  &__block-all
+    width 100%
+    display flex
+    justify-content: space-between;
+    span.text_14.bold
+      margin-left 5px
+  &__block-select
+    width 100%
+    padding 25px 0
+    display flex
+    justify-content: flex-start;
+    align-items: center;
+  &__text
+    padding-right 10px
+  &__sel-main
+    display flex
+  &__count
+    width: 531px;
+    height: 50px;
+    margin-top: 25px;
+    background: linear-gradient(0deg, #F7F7F7, #F7F7F7), #F56814;
+    border-radius: 189px;
+    display flex
+    justify-content: space-between;
+    align-items: center;
+  &__price
+    width 40%
+    padding-left: 25px;
+    span.text_20.sale-price
+      display block
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 16px;
+      text-decoration-line: line-through;
+      color: #B0B0B0;
+      position relative
+      &::before
+        content attr(data-full-price)
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 16px;
+        color: #454545;
+        position: absolute;
+        top 0
+        left 40%

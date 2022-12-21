@@ -1,0 +1,16 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Кигуруми - Homepage'
+  - var pageClass = 'index-page'
+
+block content
+  - var welcomeInfo = ['WELCOME Ozzie84 in new project!', 'Nice day))']
+
+  include ../custom/index-home/welcome
+  include ../custom/index-home/top-product
+  include ../custom/index-home/info
+  include ../custom/index-home/forsale
+  include ../custom/index-home/friend
+
+block script

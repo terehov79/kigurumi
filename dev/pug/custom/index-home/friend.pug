@@ -1,0 +1,49 @@
+.friend--wrap
+  .container
+    .friend
+      .head-wave
+        h2.text_28
+          | давайте дружить!
+      ._main
+        .row
+          .col-lg-4.col-md-12
+            .vk
+              ._head
+                ._head-main
+                  +img('content/circle_logo', 'png','vk__head-main')
+                  span.text_14
+                    | Кигуруми.ru
+                +icon('vk')
+              ._body
+                - for (var i = 0; i < 25; i++)
+                  +img('content/circle_logo', 'png','vk__body')
+              ._btn
+                button(type='button', name='subs-vk').subs-vk
+                  +icon('vk')
+                  | Подписаться на новости
+          .col-lg-4.col-md-12
+            .instagram
+              ._head
+                span.text_14
+                  | Кигуруми.ru
+                +icon('instagram')
+              ._photo
+                +img('content/circle_logo', 'png','instagram__photo')
+              ._subs
+                ._text
+                  span.text_14
+                    | 29000
+                  span.text_10
+                    | подписчиков
+                button(type='button', name='subs-inst').subs-inst
+                  | Подписаться
+              ._main
+                - for (var i = 0; i < 9; i++)
+                  +img('content/insta', 'png','instagram__main')
+          .col-lg-4.col-md-12
+            .stock
+              span.title_48
+                | АКЦИЯ
+              span(data-full-price="2 912 ₽").text_24.sale-price
+                | 1 912 ₽
+              +img('content/girl03', 'png','stock')

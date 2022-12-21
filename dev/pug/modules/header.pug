@@ -1,0 +1,33 @@
+header.header--wrap
+  .container
+    .header
+      ._main
+        ._left-side
+          ._logo
+            a(href="#").logotype
+              img(src='../static/img/general/logo.png' alt='icon')
+          ._menu
+            include menu
+        ._right-side
+          ._phone
+            a.text_18(href="tel:+78123587215")
+              | + 7 (812) 358-72-154
+            ._callback
+              +icon('phone')
+              a.text_13(href="#")
+                | Обратный  звонок
+          ._metro
+            ._spb
+              span.text_16
+                | СПб.
+              +icon('metro')
+              span.text_16
+                | ПРИМОРСКАЯ
+            a.text_13(href="#")
+              | Доставки по всей России
+          ._basket
+            button(type='button' name='basket').basket_btn
+              +icon('basket')
+          ._exit
+            button(type='button' name='basket').exit_btn
+              +icon('enter')

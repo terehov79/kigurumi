@@ -1,0 +1,58 @@
+.welcome
+	width 100%
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 660px;
+	&--wrap
+		width 100%
+		background-repeat no-repeat
+		background-position top center
+		background-size contain
+		background-color #2C2F89
+	h1.title_55
+		font-weight: 900;
+		line-height: 46px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	h2.title_40
+		font-weight: 700;
+		line-height: 46px;
+		color: #FFFFFF;
+	p.text_14
+		line-height: 16px;
+		color: #FFFFFF;
+		padding 25px 0
+	span.text_10
+		line-height: 22px;
+		text-transform: uppercase;
+		color: #009AF1;
+	p.text_20
+		line-height: 22px;
+		color: #FFFFFF;
+	.upper
+		text-transform: uppercase;
+	span.title_48
+		line-height: 46px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		position relative
+		&::after
+			content attr(data-full-price)
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 46px;
+			text-decoration-line: line-through;
+			text-transform: uppercase;
+			color: #009AF1;
+			position: absolute;
+			top 100%
+			left 0
+	.photo
+		width 100%
+		height: 660px;
+		display flex
+		justify-content: center;
+		align-items: flex-end;
+	.swiper_btn
+		padding-top 70px;

@@ -1,0 +1,146 @@
+.friend
+  width 100%
+  &--wrap
+    width 100%
+    background #F7F7F7
+  &__main
+    padding: 25px 0 50px;
+
+.vk
+  width 100%
+  background: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding 15px 25px
+  &__head
+    width 100%
+    display flex
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B0B0B0;
+    padding-bottom: 10px;
+    svg
+      size(33px, 18px)
+      fill #597da3
+  &__head-main
+    width 100%
+    &__image
+      width: 100%;
+      padding-right: 20px;
+    &__img
+      size(37px)
+    span.text_14
+      font-weight: 500;
+      line-height: 18px;
+      color: #454545;
+  &__body
+    width 100%
+    padding 10px 0
+    display: flex
+    justify-content: space-between;
+    flex-wrap wrap
+    &__image
+      padding 10px 0
+    &__img
+      size(55px)
+
+.instagram
+  width 100%
+  position relative
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius 20px;
+  overflow: hidden;
+  &__head
+    width 100%
+    padding 15px 20px 15px 110px
+    background: linear-gradient(116.77deg, #FFFFFF -20.86%, rgba(255, 255, 255, 0) 85.62%), #F56814;
+    background-blend-mode: overlay, normal;
+    display flex
+    justify-content: space-between;
+    align-items: center;
+    svg
+      size(22px)
+      fill #FFF
+    span.text_14
+      font-weight: 500;
+      line-height: 18px;
+      color #FFF
+  &__photo
+    position absolute
+    top 15px
+    left 20px
+  &__subs
+    width 100%
+    padding 30px 20px 15px 110px
+    background-color #FFF
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  &__text
+    display flex
+    flex-direction column
+    justify-content: center;
+    align-items: center;
+    span.text_14
+      font-weight: 500;
+      line-height: 18px;
+      text-align: center;
+      color: #454545;
+    span.text_10
+      font-weight: 500;
+      line-height: 13px;
+      text-align: center;
+      color: #B0B0B0;
+  &__main
+    width 100%
+    padding 10px 20px
+    background-color #FFF
+    display: flex
+    justify-content: space-between;
+    flex-wrap wrap
+    &__image
+      padding 10px 0
+    &__img
+      size(100px)
+
+.stock
+  width 100%
+  height 509px
+  padding 50px 0 0 50px
+  background: linear-gradient(116.77deg, #FFFFFF -20.86%, rgba(255, 255, 255, 0) 85.62%), #F56814;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius 20px
+  display flex
+  flex-direction column
+  justify-content: flex-start;
+  position relative
+  span.title_48
+    font-weight: 900;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+  span.text_24.sale-price
+    display block
+    font-weight: bold;
+    line-height: 16px;
+    color: #FFFFFF;
+    font-size: 36px;
+    position relative
+    &::after
+      content attr(data-full-price)
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 16px;
+      color: #FFDF9C;
+      text-decoration-line: line-through;
+      position: absolute;
+      top 40px
+      left 0
+  &__image
+    width 100%
+    position absolute
+    left 0
+    bottom 0
+  &__img
+    width 95%

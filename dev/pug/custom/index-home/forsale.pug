@@ -1,0 +1,61 @@
+.forsale--wrap
+  .container
+    .swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          .forsale_slide
+            .forsale
+              ._main
+                ._photo.sale
+                  +img('general/background02', 'png','forsale__bg')
+                  +img('content/girl02', 'png','forsale__girl')
+                  +img('content/circ01', 'png','forsale__circ01')
+                  +img('content/circ02', 'png','forsale__circ02')
+                ._content
+                  span.text_24
+                    | Разноцветный Единорог Со Звездами
+                  p.text_14
+                    | Кигуруми разноцветного единорога со звездами - мягкая, теплая, красивая пижама в виде волшебного единорога может согреть вас вечерами за чашечкой любимого напитка!
+                  ._block-all
+                    ._block
+                      span.text_14
+                        | для кого:
+                      span.text_14.bold
+                        | Ж
+                    ._block
+                      span.text_14
+                        | материал:
+                      span.text_14.bold
+                        | Велсофт
+                    ._block
+                      span.text_14
+                        | молния:
+                      span.text_14.bold
+                        | Сзади
+                    ._block
+                      span.text_14
+                        | хвост:
+                      span.text_14.bold
+                        | Длинный
+                  ._block-select
+                    ._text
+                      span.text_14.bold
+                        | Ваши размеры:
+                    ._sel
+                      ._sel-main
+                        +select(['145- 155 см', '165- 175 см', '185- 195 см'], 'size')
+                        button(type='button', name='add').add_btn
+                          span +
+                  ._count
+                    +counter
+                    ._price
+                      span(data-full-price="1 912 ₽").text_20.sale-price
+                        | 2456 ₽
+                    button(type='button', name='buy').btn_global
+                      | Купить
+                  +img('content/girl02', 'png','forsale__girl-opacity')
+    .swiper_btn
+      button(type='button' name='prev').swiper-prev_btn
+        +icon('arrow')
+      button(type='button' name='next').swiper-next_btn
+        +icon('arrow')

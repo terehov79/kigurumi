@@ -1,0 +1,37 @@
+.welcome--wrap(style='background-image: url("static/img/general/background01.png");')
+  .container
+    .swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          .welcome_slide
+            .row
+              .welcome
+                .col-lg-5.col-md-12
+                  h1.title_55
+                    | Кигуруми
+                  h2.title_40
+                    | Радужный единорог
+                  p.text_14
+                    | Сопроводителный текст про условия акции или
+                    br
+                    | короткое описание костюма
+                  button(type='button' name='want').btn_global.want_btn
+                    | Хочу-у-у!
+                    +img('content/notification01', 'png','want_btn')
+                .col-lg-5.col-md-12
+                  .photo
+                    +img('content/girl01', 'png','photo')
+                .col-lg-2.col-md-12
+                  span.text_10.bold
+                    | акция ноября
+                  p.text_20.upper.bold
+                    | все кигуруми
+                  p.text_20.bold
+                    | со скидкой - 15%
+                  span(data-full-price="1325 ₽").title_48.bold.sale-price
+                    | 1925 ₽
+                  .swiper_btn
+                    button(type='button' name='prev').swiper-prev_btn
+                      +icon('arrow')
+                    button(type='button' name='next').swiper-next_btn
+                      +icon('arrow')
